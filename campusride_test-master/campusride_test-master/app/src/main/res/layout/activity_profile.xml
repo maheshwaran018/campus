@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121826">
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/textNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textNameLabel"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Register No -->
+    <TextView
+        android:id="@+id/textRegisterNoLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="College ID:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/textName"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textRegisterNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textRegisterNoLabel"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Role -->
+    <TextView
+        android:id="@+id/textRoleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/textRegisterNo"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textRole"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textRoleLabel"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Gender -->
+    <TextView
+        android:id="@+id/textGenderLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender:"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_below="@id/textRole"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/textGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGenderLabel"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <!-- Edit Button -->
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textGender"
+        android:layout_centerHorizontal="true"
+        android:text="Edit"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

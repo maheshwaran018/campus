@@ -1,0 +1,217 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#121826">
+
+    <TextView
+        android:id="@+id/titleDashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Driver Dashboard"
+        android:textSize="22sp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/seatInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Passenger Details"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/titleDashboard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <!-- 4 Seat Slots -->
+    <LinearLayout
+        android:id="@+id/seatsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seatInfo"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <!-- Seat 1 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger 1:"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/passengerId1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Passenger ID"
+                android:textColorHint="#FFFFFF"
+                android:background="@drawable/textbg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:id="@+id/gender1"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:textColorHint="#FFFFFF"
+                android:background="@drawable/textbg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Seat 2 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger 2:"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/passengerId2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Passenger ID"
+                android:textColorHint="#FFFFFF"
+                android:background="@drawable/textbg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/gender2"
+                android:layout_width="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:textColorHint="#FFFFFF"
+                android:background="@drawable/textbg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Seat 3 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger 3:"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/passengerId3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Passenger ID"
+                android:textColorHint="#FFFFFF"
+                android:background="@drawable/textbg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/gender3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:layout_marginLeft="10dp"
+                android:textColorHint="#FFFFFF"
+                android:background="@drawable/textbg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Seat 4 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Passenger 4:"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/passengerId4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="Passenger ID"
+                android:textColorHint="#FFFFFF"
+                android:background="@drawable/textbg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/gender4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+                android:textColorHint="#FFFFFF"
+                android:background="@drawable/textbg"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/seatsContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Clear All Button -->
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear All"
+        android:backgroundTint="#FF5252"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"/>
+
+</RelativeLayout>
